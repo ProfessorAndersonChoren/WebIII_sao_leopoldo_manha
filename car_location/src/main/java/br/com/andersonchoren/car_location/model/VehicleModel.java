@@ -1,8 +1,10 @@
 package br.com.andersonchoren.car_location.model;
 
 import java.util.List;
+import java.util.UUID;
 
 public class VehicleModel {
+    public UUID id;
     public String plate;
     public String model;
     public String brand;
