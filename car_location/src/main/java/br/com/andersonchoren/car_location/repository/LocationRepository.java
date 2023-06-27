@@ -2,20 +2,22 @@ package br.com.andersonchoren.car_location.repository;
 
 import br.com.andersonchoren.car_location.model.LocationModel;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
 public class LocationRepository implements IRepository<LocationModel> {
-    // TODO Implementar a lista
+    private List<LocationModel> tLocations = new ArrayList<>();
+
     @Override
     public boolean insert(LocationModel object) {
-        return false;
+        return tLocations.add(object);
     }
 
     @Override
     public List<LocationModel> findAll() {
-        return null;
+        return tLocations;
     }
 
     @Override
@@ -30,6 +32,6 @@ public class LocationRepository implements IRepository<LocationModel> {
 
     @Override
     public void delete(int position) {
-
+        tLocations.remove(position);
     }
 }

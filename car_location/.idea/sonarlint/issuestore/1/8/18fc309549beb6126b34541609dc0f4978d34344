@@ -1,0 +1,20 @@
+
+p
+java:S1104"NMake id a static final constant or non-public and provide accessors if needed.(ê“àşùÿÿÿÿ8ÉèÄœ1
+n
+java:S1104"QMake plate a static final constant or non-public and provide accessors if needed.(—ü¾ƒ8ìÏ€Ê1
+s
+java:S1104	"QMake model a static final constant or non-public and provide accessors if needed.(¢úõşÿÿÿÿ8»ºÊ1
+n
+java:S1104
+"QMake brand a static final constant or non-public and provide accessors if needed.(ü“ÀÆ8¼ºÊ1
+s
+java:S1104"QMake color a static final constant or non-public and provide accessors if needed.(æ®şôûÿÿÿÿ8¾ºÊ1
+{
+java:S1104"YMake ageProduction a static final constant or non-public and provide accessors if needed.(¨×ÑÈûÿÿÿÿ8¿ºÊ1
+q
+java:S1104"TMake ageModel a static final constant or non-public and provide accessors if needed.(ôû¾ê8ÁºÊ1
+u
+java:S1104"SMake mileage a static final constant or non-public and provide accessors if needed.(ª×¡Öüÿÿÿÿ8ÃºÊ1
+r
+java:S1104"UMake locations a static final constant or non-public and provide accessors if needed.(Ö„…µ8ÄºÊ1

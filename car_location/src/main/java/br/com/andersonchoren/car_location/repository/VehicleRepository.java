@@ -17,7 +17,7 @@ public class VehicleRepository implements IRepository<VehicleModel>{
 
     @Override
     public List<VehicleModel> findAll() {
-        return null;
+        return tVehicles;
     }
 
     @Override
