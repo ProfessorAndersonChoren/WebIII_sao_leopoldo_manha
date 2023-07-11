@@ -2,11 +2,12 @@ package br.com.andersonchoren.car_location.service;
 
 import br.com.andersonchoren.car_location.model.ClientModel;
 import br.com.andersonchoren.car_location.repository.ClientRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-
+@Service
 public class ClientService implements IService<ClientModel>{
     private ClientRepository clientRepository;
 
@@ -27,7 +28,8 @@ public class ClientService implements IService<ClientModel>{
 
     @Override
     public Optional<ClientModel> findById(UUID id) {
-        // TODO Validar os dados
+        if(id == null)
+            return Optional.empty();
         return clientRepository.findById(id);
     }
 

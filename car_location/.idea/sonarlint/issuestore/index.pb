@@ -7,10 +7,6 @@ Ssrc/main/java/br/com/andersonchoren/car_location/repository/EmployeeRepository.
 Rsrc/main/java/br/com/andersonchoren/car_location/repository/VehicleRepository.java,f\e\fe378ce8ff88ad85b175d1e29e36c90c3d1d5fc0
 É
 Ssrc/main/java/br/com/andersonchoren/car_location/repository/LocationRepository.java,5\e\5edb79458b642b41a882a91bb2492a379ee47432
-Å
-Qsrc/main/java/br/com/andersonchoren/car_location/repository/ClientRepository.java,d\0\d05b4777076b7f92afa8088e69d4b830409c469b
-v
-Fsrc/main/java/br/com/andersonchoren/car_location/service/IService.java,3\6\367b6669adaff96c44e18fb2fa16cbee586fabba
 |
 Lsrc/main/java/br/com/andersonchoren/car_location/service/VehicleService.java,b\3\b33ef1241264b1c08ad2fdbcdd1746ae85aef532
 }
@@ -27,5 +23,3 @@ y
 Isrc/main/java/br/com/andersonchoren/car_location/model/EmployeeModel.java,f\1\f1e26bd9165cb0913a1ebc7a880036ce80bf0a88
 w
 Gsrc/main/java/br/com/andersonchoren/car_location/model/ClientModel.java,e\6\e6ca82324c3ec5a95bfa795326310ab01fcb001e
-s
-Csrc/main/java/br/com/andersonchoren/car_location/dto/ClientDTO.java,9\4\949d8c72ed37ed5b96467b1c596f4593b358acf7

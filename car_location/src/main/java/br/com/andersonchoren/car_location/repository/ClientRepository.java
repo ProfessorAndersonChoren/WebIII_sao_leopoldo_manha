@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 public class ClientRepository implements IRepository<ClientModel>{
     private List<ClientModel> tClients = new ArrayList<>();
@@ -17,11 +18,16 @@ public class ClientRepository implements IRepository<ClientModel>{
 
     @Override
     public List<ClientModel> findAll() {
-        return null;
+        return tClients;
     }
 
     @Override
     public Optional<ClientModel> findById(UUID id) {
+        var result = tClients.stream().filter(
+                model -> model.getId() == id
+        ).toList();
+        if(!result.isEmpty())
+            return Optional.of(result.get(0));
         return Optional.empty();
     }
 
