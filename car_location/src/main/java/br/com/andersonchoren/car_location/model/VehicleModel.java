@@ -13,4 +13,76 @@ public class VehicleModel {
     public short ageModel;
     public int mileage;
     public List<LocationModel> locations;
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public String getPlate() {
+        return plate;
+    }
+
+    public void setPlate(String plate) {
+        this.plate = plate;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public short getAgeProduction() {
+        return ageProduction;
+    }
+
+    public void setAgeProduction(short ageProduction) {
+        this.ageProduction = ageProduction;
+    }
+
+    public short getAgeModel() {
+        return ageModel;
+    }
+
+    public void setAgeModel(short ageModel) {
+        this.ageModel = ageModel;
+    }
+
+    public int getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
+    }
+
+    public List<LocationModel> getLocations() {
+        return locations;
+    }
+
+    public void setLocations(List<LocationModel> locations) {
+        this.locations = locations;
+    }
 }
