@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 public class ClientRepository implements IRepository<ClientModel>{
     private List<ClientModel> tClients = new ArrayList<>();
@@ -33,6 +32,12 @@ public class ClientRepository implements IRepository<ClientModel>{
 
     @Override
     public boolean update(ClientModel object) {
+        for (int i = 0; i < tClients.size(); i++) {
+            if(tClients.get(i).getId().equals(object.getId())){
+                tClients.set(i,object);
+                return true;
+            }
+        }
         return false;
     }
 

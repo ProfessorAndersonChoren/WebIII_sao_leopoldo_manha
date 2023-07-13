@@ -17,7 +17,6 @@ public class ClientService implements IService<ClientModel>{
 
     @Override
     public boolean insert(ClientModel object) {
-        // TODO Validar os dados
         return clientRepository.insert(object);
     }
 
@@ -35,13 +34,11 @@ public class ClientService implements IService<ClientModel>{
 
     @Override
     public boolean update(ClientModel object) {
-        // TODO Validar os dados
         return clientRepository.update(object);
     }
 
     @Override
     public void delete(int position) {
-        // TODO Validar os dados
         clientRepository.delete(position);
     }
 }

@@ -3,6 +3,7 @@ package br.com.andersonchoren.car_location.controller;
 import br.com.andersonchoren.car_location.dto.ClientDTO;
 import br.com.andersonchoren.car_location.model.ClientModel;
 import br.com.andersonchoren.car_location.service.ClientService;
+import jakarta.validation.Valid;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ public class ClientController {
         this.clientService = clientService;
     }
     @PostMapping
-    public boolean insert(@RequestBody ClientDTO client) {
+    public boolean insert(@Valid @RequestBody ClientDTO client) {
         var clientModel = new ClientModel();
         BeanUtils.copyProperties(client,clientModel);
         return clientService.insert(clientModel);
@@ -51,11 +52,13 @@ public class ClientController {
 
     @PutMapping
     public boolean update(@RequestBody ClientDTO client) {
-        return false;
+        var clientModel = new ClientModel();
+        BeanUtils.copyProperties(client,clientModel);
+        return clientService.update(clientModel);
     }
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable int id){
-
+        clientService.delete(id);
     }
 }
